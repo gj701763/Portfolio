@@ -8,10 +8,10 @@ const Experience = () => {
       className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
-      <div className="text-center mb-16">
+      <div className="mb-16 text-center">
         <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <div className="w-32 h-1 mx-auto mt-4 bg-purple-500"></div>
+        <p className="mt-4 text-lg font-semibold text-gray-400">
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
@@ -20,7 +20,7 @@ const Experience = () => {
       {/* Experience Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
+        <div className="absolute left-0 w-1 h-full transform -translate-x-1/2 bg-white sm:left-1/2 sm:-translate-x-0"></div>
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
@@ -35,39 +35,39 @@ const Experience = () => {
               <img
                 src={experience.img}
                 alt={experience.company}
-                className="w-full h-full object-cover rounded-full"
+                className="object-cover w-full h-full rounded-full"
               />
             </div>
 
             {/* Content Section */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-3xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
                 index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
               } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
                 {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                <div className="w-16 h-16 overflow-hidden bg-white rounded-md">
                   <img
                     src={experience.img}
                     alt={experience.company}
-                    className="w-full h-full object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
 
                 {/* Role, Company Name, and Date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
                       {experience.role}
                     </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
+                    <h4 className="text-gray-300 text-md sm:text-sm">
                       {experience.company}
                     </h4>
                   </div>
                   {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  <p className="mt-2 text-sm text-gray-500">{experience.date}</p>
                 </div>
               </div>
 

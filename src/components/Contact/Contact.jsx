@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_axbtt7a",  // Replace with your EmailJS Service ID
-        "template_1ziboq3",  // Replace with your EmailJS Template ID
+        "service_254zi55",  // Replace with your EmailJS Service ID
+        "template_yfkzf63",  // Replace with your EmailJS Template ID
         form.current,
-        "Rz7W9pVF0HdDryNNL"  // Replace with your EmailJS Public Key
+        "Ne-DatrfDibK0AAmF"  // Replace with your EmailJS Public Key
       )
       .then(
         () => {
@@ -55,21 +55,21 @@ const Contact = () => {
       <ToastContainer />
 
       {/* Section Title */}
-      <div className="text-center mb-16">
+      <div className="mb-16 text-center">
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <div className="w-32 h-1 mx-auto mt-4 bg-purple-500"></div>
+        <p className="mt-4 text-lg font-semibold text-gray-400">
           I’d love to hear from you—reach out for any opportunities or questions!
         </p>
       </div>
 
       {/* Contact Form */}
       <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
-        <h3 className="text-xl font-semibold text-white text-center">
+        <h3 className="text-xl font-semibold text-center text-white">
           Connect With Me <span className="ml-1">🚀</span>
         </h3>
 
-        <form ref={form} onSubmit={sendEmail} className="mt-4 flex flex-col space-y-4">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col mt-4 space-y-4">
           <input
             type="email"
             name="user_email"
@@ -102,7 +102,7 @@ const Contact = () => {
           {/* Send Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition"
+            className="w-full py-3 font-semibold text-white transition rounded-md bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90"
           >
             Send
           </button>
