@@ -41,7 +41,7 @@ const Footer = () => {
           {[
             { icon: <FaFacebook />, link: "https://www.facebook.com/profile.php?id=100055789510390" },
             { icon: <FaTwitter />, link: "https://x.com/Gajanan70650580" },
-            { icon: <FaLinkedin />, link: "#" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/gajanan-jadhav-999266228/" },
             { icon: <FaInstagram />, link: "https://www.instagram.com/gaju_raje96k/" },
             { icon: <FaYoutube />, link: "https://www.youtube.com/@gajananraje8742" },
             
