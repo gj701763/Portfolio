@@ -189,7 +189,7 @@ export const education = [{
     img: maha,
     school: "SMT.Indira Gandhi High School,Ramnagar",
     date: "June 2018 - March 2019",
-    grade: "87.5%",
+    grade: "86.40%",
     desc: "I completed my class 10 education from SMT.Indira Gandhi School, Ramnagar, under the Maharashtra State Board, where I studied Science with Math.",
     degree: "Maharashtra State Board(X), Marathi Medium",
   },
