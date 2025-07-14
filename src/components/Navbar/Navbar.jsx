@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-        isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled
+          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between py-5 text-white">
@@ -70,6 +73,14 @@ const Navbar = () => {
 
         {/* Social Icons */}
         <div className="hidden space-x-4 md:flex">
+          <a
+            href="https://leetcode.com/gj701763"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#FFA116]" // LeetCode's orange accent
+          >
+            <SiLeetcode size={24} />
+          </a>
           <a
             href="https://github.com/gj701763"
             target="_blank"
@@ -121,6 +132,15 @@ const Navbar = () => {
               </li>
             ))}
             <div className="flex space-x-4">
+              <a
+                href="https://leetcode.com/gj701763"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#FFA116]" // LeetCode's orange accent
+              >
+                <SiLeetcode size={24} />
+              </a>
+
               <a
                 href="https://github.com/codingmastr"
                 target="_blank"
