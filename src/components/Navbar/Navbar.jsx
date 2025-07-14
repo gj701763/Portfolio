@@ -133,16 +133,7 @@ const Navbar = () => {
             ))}
             <div className="flex space-x-4">
               <a
-                href="https://leetcode.com/gj701763"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-[#FFA116]" // LeetCode's orange accent
-              >
-                <SiLeetcode size={24} />
-              </a>
-
-              <a
-                href="https://github.com/codingmastr"
+                href="https://github.com/gj701763"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -150,7 +141,7 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+                href="https://www.linkedin.com/in/gajanan-jadhav-999266228/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
