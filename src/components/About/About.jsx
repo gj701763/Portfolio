@@ -26,6 +26,7 @@ const About = () => {
             <ReactTypingEffect
               text={[
                 'Fullstack Developer',
+                'Java Developer',
                 'Student',
                 'Coder',
               ]}
@@ -40,7 +41,7 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="mt-8 mb-10 text-base leading-relaxed text-gray-400 sm:text-lg md:text-lg">
-          "I'm a beginner full-stack developer learning to build web applications using the MERN stack. I enjoy creating simple and functional websites while improving my skills in both front-end and back-end development."
+          "I'm a beginner Java full-stack developer passionate about building web applications using technologies like Spring Boot, Hibernate, and MySQL for the backend, and React.js, HTML, and CSS for the frontend. I enjoy creating clean, user-friendly interfaces and writing efficient backend logic while continuously enhancing my full-stack development skills."
           </p>
           {/* Resume Button */}
           <a

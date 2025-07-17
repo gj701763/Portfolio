@@ -14,6 +14,7 @@ import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
+import hibernateLogo from './assets/tech_logo/hibernate.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 import firebaseLogo from './assets/tech_logo/firebase.png';
@@ -88,11 +89,12 @@ export const SkillsInfo = [{
     title: 'Backend',
     skills: [
       {name: 'Springboot',logo: springbootLogo},
-      {name: 'Node JS',logo: nodejsLogo },
-      {name: 'Express JS', logo: expressjsLogo
-      },
+      // {name: 'Node JS',logo: nodejsLogo },
+      // {name: 'Express JS', logo: expressjsLogo
+      //},
       {name: 'MySQL', logo: mysqlLogo},
-      {name: 'MongoDB',logo: mongodbLogo},
+      {name : 'Hibernate', logo: hibernateLogo},
+      // {name: 'MongoDB',logo: mongodbLogo},
       { name: 'Firebase',logo: firebaseLogo },
     ],
   },
