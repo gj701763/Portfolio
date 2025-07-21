@@ -224,14 +224,5 @@ export const projects = [{
     github: "https://github.com/gj701763/LandingPage",
     webapp: "https://sage-duckanoo-3b6240.netlify.app/",
   },
-  {
-    id: 3,
-    title: "Spotify clone",
-    description: "The Spotify Clone is a full-stack web application that replicates the core functionality and user interface of Netflix, the popular video streaming platform. It allows users to browse, search, and watch trailers of movies and TV shows, offering a responsive, engaging UI similar to the real Spotify",
-    image: npmLogo,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/gj701763/Tailwind_Projects",
-    webapp: "https://spotify-sprightly-kleicha-83ea48.netlify.app/spotify",
-  },
 
 ];
