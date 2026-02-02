@@ -18,6 +18,9 @@ import hibernateLogo from './assets/tech_logo/hibernate.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 import firebaseLogo from './assets/tech_logo/firebase.png';
+import intellij from './assets/tech_logo/intellij.png';
+import eclipse from './assets/tech_logo/eclipse.png'
+import Sql from './assets/tech_logo/sql.png';
 import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
 import javaLogo from './assets/tech_logo/java.png';
@@ -87,38 +90,97 @@ export const SkillsInfo = [{
   },
   {
     title: 'Backend',
-    skills: [
-      {name: 'Springboot',logo: springbootLogo},
+    skills: [{
+        name: 'Springboot',
+        logo: springbootLogo
+      },
       // {name: 'Node JS',logo: nodejsLogo },
       // {name: 'Express JS', logo: expressjsLogo
       //},
-      {name: 'MySQL', logo: mysqlLogo},
-      {name : 'Hibernate', logo: hibernateLogo},
+      {
+        name: 'MySQL',
+        logo: mysqlLogo
+      },
+      {
+        name: 'Hibernate',
+        logo: hibernateLogo
+      },
       // {name: 'MongoDB',logo: mongodbLogo},
-      { name: 'Firebase',logo: firebaseLogo },
+      {
+        name: "JDBC",
+        logo: javaLogo
+      }
+
     ],
   },
   {
     title: 'Languages',
-    skills: [
-      { name: 'C',logo: cLogo},
-      {name: 'C++', logo: cppLogo},
-      {name: 'Java',logo: javaLogo},
-      { name: 'JavaScript',logo: javascriptLogo},
+    skills: [{
+        name: 'C',
+        logo: cLogo
+      },
+      {
+        name: 'C++',
+        logo: cppLogo
+      },
+      {
+        name: 'Java',
+        logo: javaLogo
+      },
+      {
+        name: 'JavaScript',
+        logo: javascriptLogo
+      },
+      {
+        name: "SQL",
+        logo: Sql
+      }
     ],
   },
   {
     title: 'Tools',
-    skills: [
-      { name: 'LeetCode', logo: leetcodeLogo },
-      { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
-      { name: 'Vercel', logo: vercelLogo },
-      { name: 'Netlify', logo: netlifyLogo },
-      { name: 'Figma', logo: figmaLogo },
+    skills: [{
+        name: 'LeetCode',
+        logo: leetcodeLogo
+      },
+      {
+        name: 'Git',
+        logo: gitLogo
+      },
+      {
+        name: 'GitHub',
+        logo: githubLogo
+      },
+      {
+        name: 'VS Code',
+        logo: vscodeLogo
+      },
+      // {
+      //   name: 'Postman',
+      //   logo: postmanLogo
+      // },
+      {
+        name: "Eclipse", logo: eclipse
+      },
+      {
+        name: "Intellij Idea", logo: intellij
+      },
+      // {
+      //   name: 'Compass',
+      //   logo: mcLogo
+      // },
+      {
+        name: 'Vercel',
+        logo: vercelLogo
+      },
+      {
+        name: 'Netlify',
+        logo: netlifyLogo
+      },
+      // {
+      //   name: 'Figma',
+      //   logo: figmaLogo
+      // },
     ]
 
 
