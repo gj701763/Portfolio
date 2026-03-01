@@ -66,10 +66,10 @@ export const SkillsInfo = [{
         name: 'CSS',
         logo: cssLogo
       },
-      {
-        name: 'SASS',
-        logo: sassLogo
-      },
+      // {
+      //   name: 'SASS',
+      //   logo: sassLogo
+      // },
       {
         name: 'JavaScript',
         logo: javascriptLogo
