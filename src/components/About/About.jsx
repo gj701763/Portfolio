@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/profile3.jpg';
+import React from "react";
+import ReactTypingEffect from "react-typing-effect";
+import Tilt from "react-parallax-tilt";
+import profileImage from "../../assets/profile3.jpg";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-14 md:mt-20 lg:mt-30"
-    >
+      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-14 md:mt-20 lg:mt-30">
       <div className="flex flex-col-reverse items-center justify-between md:flex-row">
         {/* Left Side */}
         <div className="mt-8 text-center md:w-1/2 md:text-left md:mt-0">
@@ -25,10 +24,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Fullstack Developer',
-                'Java Developer',
-                'Student',
-                'Coder',
+                "Fullstack Developer",
+                "Java Developer",
+                "Student",
+                "Coder",
               ]}
               speed={100}
               eraseSpeed={50}
@@ -41,22 +40,25 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="mt-8 mb-10 text-base leading-relaxed text-gray-400 sm:text-lg md:text-lg">
-          "I'm a beginner Java full-stack developer passionate about building web applications using technologies like Spring Boot, Hibernate, and MySQL for the backend, and React.js, HTML, and CSS for the frontend. I enjoy creating clean, user-friendly interfaces and writing efficient backend logic while continuously enhancing my full-stack development skills."
+            "I'm a beginner Java full-stack developer passionate about building
+            web applications using technologies like Spring Boot, Hibernate, and
+            MySQL for the backend, and React.js, HTML, and CSS for the frontend.
+            I enjoy creating clean, user-friendly interfaces and writing
+            efficient backend logic while continuously enhancing my full-stack
+            development skills."
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1RVREDD1qsCLBjvJzIOO5ABgPadkoyazp/view"
+            href="https://drive.google.com/file/d/1Qov0-egfcTZ0JrHoqD5QtoPaA2t6R5HI/view"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 mt-5 text-lg font-bold text-white transition duration-300 transform rounded-full hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-            }}
-          >
+              background: "linear-gradient(90deg, #8245ec, #a855f7)",
+              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+            }}>
             DOWNLOAD CV
           </a>
-          
         </div>
         {/* Right Side */}
         <div className="flex justify-center md:w-1/2 md:justify-end">
@@ -67,8 +69,7 @@ const About = () => {
             perspective={1000}
             scale={1.05}
             transitionSpeed={1000}
-            gyroscope={true}
-          >
+            gyroscope={true}>
             <img
               src={profileImage}
               alt="Gajanan Jadhav"
