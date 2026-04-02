@@ -155,15 +155,17 @@ export const SkillsInfo = [{
         name: 'VS Code',
         logo: vscodeLogo
       },
-      // {
-      //   name: 'Postman',
-      //   logo: postmanLogo
-      // },
       {
-        name: "Eclipse", logo: eclipse
+        name: 'Postman',
+        logo: postmanLogo
       },
       {
-        name: "Intellij Idea", logo: intellij
+        name: "Eclipse",
+        logo: eclipse
+      },
+      {
+        name: "Intellij Idea",
+        logo: intellij
       },
       // {
       //   name: 'Compass',
