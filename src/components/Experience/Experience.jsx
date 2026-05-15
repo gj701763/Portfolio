@@ -1,6 +1,6 @@
 import React from "react";
+import gavkariLogo from "../../assets/gavkariLogowithback.png";
 
-// Inline experience data — replace `img` with your actual image path/import
 const experiences = [
   {
     id: 1,
@@ -8,7 +8,7 @@ const experiences = [
     company: "Gavkari Agro Producer Company Limited",
     date: "Mar 2023 – Present",
     location: "Pune, Maharashtra",
-    img: "/gavkari-logo.png", // ← swap with your real logo path
+    img: gavkariLogo,
     desc: "Building and maintaining end-to-end web features using React on the frontend and Java Spring Boot on the backend. Delivered admin dashboards, microservices, and CI/CD pipelines that gave operations teams direct control and significantly improved system reliability.",
     skills: [
       "React",
