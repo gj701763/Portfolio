@@ -113,7 +113,7 @@ const Work = () => {
                   </a>
                   <a
                     href={selectedProject.webapp}
-                    target="_blank"
+                    
                     rel="noopener noreferrer"
                     className="w-1/2 px-2 py-1 text-sm font-semibold text-center text-white bg-purple-600 hover:bg-purple-800 lg:px-6 lg:py-2 rounded-xl lg:text-xl"
                   >

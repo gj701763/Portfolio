@@ -52,7 +52,8 @@ import maha from './assets/education_logo/LogoBord.png'
 import githubdetLogo from './assets/work_logo/localConnect.png';
 import csprepLogo from './assets/work_logo/netclone.png';
 import movierecLogo from './assets/work_logo/page.png';
-import npmLogo from './assets/work_logo/spotify.png'
+import npmLogo from './assets/work_logo/spotify.png';
+import gavkariLogo from './assets/work_logo/gavkariHome.png';
 
 
 
@@ -272,12 +273,11 @@ export const projects = [{
   },
   {
     id: 1,
-    title: "Netflix Clone",
-    description: "The Netflix Clone is a full-stack web application that replicates the core functionality and user interface of Netflix, the popular video streaming platform. It allows users to browse, search, and watch trailers of movies and TV shows, offering a responsive, engaging UI similar to the real Netflix",
-    image: csprepLogo,
-    tags: ["React JS", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/gj701763/NETFLIX_CLONE",
-    webapp: "https://landingpage-kringle-0f4e2d.netlify.app/",
+    title: "Gavkari Agro Producer Company Limited",
+    description: "Developed a complete HR Management System to automate employee operations including employee onboarding, profile management, salary structure management, PF contribution tracking, document verification, OTP-based authentication, and HR approval workflows.",
+    image: gavkariLogo,
+    tags: ["React JS","Spring Boot", "MySQL", "Hibernate", "Docker","Kubernetes","Azure DevOps","CI/CD"],
+    webapp: "https://gavkariagroproducer.com/",
   },
   {
     id: 2,
