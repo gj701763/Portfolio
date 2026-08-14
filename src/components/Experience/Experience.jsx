@@ -1,12 +1,69 @@
 import React from "react";
+import techAimLogo from "../../assets/1234.png";
 import gavkariLogo from "../../assets/gavkariLogowithback.png";
 
 const experiences = [
   {
+    id: 0,
+    role: "Java FullStack Developer",
+    company: "TechAim",
+    date: "Jul 2026 – Present • 2 mos",
+    location: "Pune City, Maharashtra, India • Remote",
+    img: techAimLogo,
+    desc: "Joining TECHAIM as a Java FullStack Developer to design, develop, and maintain high-performance end-to-end web applications.",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "REST APIs",
+      "MySQL",
+      "PostgreSQL",
+      "JWT",
+      "Hibernate",
+      "Spring Security",
+      "Docker",
+      "Git",
+      "GitHub",
+      "Agile",
+    ],
+    bullets: [
+      {
+        label: "Full Stack Development",
+        detail:
+          "Built and maintained responsive web applications using Java, Spring Boot, and React, delivering clean user experiences and scalable backend services.",
+      },
+      {
+        label: "Backend & APIs",
+        detail:
+          "Developed RESTful APIs and service-layer logic for business workflows with secure authentication, validation, and efficient data handling.",
+      },
+      {
+        label: "Database Management",
+        detail:
+          "Designed and optimized database interactions using MySQL and PostgreSQL, improving data integrity, performance, and query efficiency.",
+      },
+      {
+        label: "Security",
+        detail:
+          "Implemented JWT-based authentication and role-based access controls to protect application endpoints and user resources.",
+      },
+      {
+        label: "DevOps & Deployment",
+        detail:
+          "Worked with Docker and CI/CD workflows to streamline deployment, testing, and environment consistency across the development cycle.",
+      },
+      {
+        label: "Collaboration",
+        detail:
+          "Collaborated with cross-functional teams in an Agile environment using Git and GitHub for efficient version control and project delivery.",
+      },
+    ],
+  },
+  {
     id: 1,
     role: "Full Stack Developer (React & Java)",
     company: "Gavkari Agro Producer Company Limited",
-    date: "Mar 2023 – Present",
+    date: "Mar 2024 – June 2026",
     location: "Pune, Maharashtra",
     img: gavkariLogo,
     desc: "Building and maintaining end-to-end web features using React on the frontend and Java Spring Boot on the backend. Delivered admin dashboards, microservices, and CI/CD pipelines that gave operations teams direct control and significantly improved system reliability.",
@@ -90,96 +147,106 @@ const Experience = () => {
         <div className="absolute left-0 w-1 h-full transform -translate-x-1/2 bg-white sm:left-1/2 sm:-translate-x-0"></div>
 
         {/* Experience Entries */}
-        {experiences.map((experience, index) => (
-          <div
-            key={experience.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
-            }`}>
-            {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
-              <img
-                src={experience.img}
-                alt={experience.company}
-                className="object-cover w-full h-full rounded-full"
-              />
-            </div>
+        {experiences.map((experience, index) => {
+          const isTechAim = experience.company === "TechAim";
 
-            {/* Content Section */}
+          return (
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-3xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}>
-              {/* Flex container for image and text */}
-              <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="flex-shrink-0 w-16 h-16 overflow-hidden bg-white rounded-md">
-                  <img
-                    src={experience.img}
-                    alt={experience.company}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-
-                {/* Role, Company Name, Date, Location */}
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
-                      {experience.role}
-                    </h3>
-                    <h4 className="text-gray-300 text-md sm:text-sm">
-                      {experience.company}
-                    </h4>
-                    {experience.location && (
-                      <p className="text-xs text-purple-400 mt-0.5">
-                        📍 {experience.location}
-                      </p>
-                    )}
-                  </div>
-                  <p className="mt-2 text-sm text-gray-500">
-                    {experience.date}
-                  </p>
-                </div>
+              key={experience.id}
+              className={`flex flex-col sm:flex-row items-center mb-16 ${
+                index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
+              }`}>
+              {/* Timeline Circle */}
+              <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+                <img
+                  src={experience.img}
+                  alt={experience.company}
+                  className="object-cover w-full h-full rounded-full"
+                />
               </div>
 
-              {/* Summary description */}
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
+              {/* Content Section */}
+              <div
+                className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-3xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+                  index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
+                } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}>
+                {/* Flex container for image and text */}
+                <div
+                  className={`flex items-center ${isTechAim ? "space-x-5" : "space-x-6"}`}>
+                  {/* Company Logo/Image */}
+                  <div
+                    className={`flex-shrink-0 overflow-hidden rounded-xl border bg-white shadow-[0_0_12px_rgba(255,255,255,0.2)] ${
+                      isTechAim
+                        ? "w-20 h-20 border-[2px] border-white/80"
+                        : "w-16 h-16 border border-white/70"
+                    }`}>
+                    <img
+                      src={experience.img}
+                      alt={experience.company}
+                      className={`object-cover w-full h-full ${isTechAim ? "p-2" : "p-1"}`}
+                    />
+                  </div>
 
-              {/* Bullet points */}
-              {experience.bullets && experience.bullets.length > 0 && (
-                <ul className="mt-4 space-y-2">
-                  {experience.bullets.map((bullet, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-2 text-sm text-gray-400">
-                      <span className="flex-shrink-0 w-2 h-2 mt-1 bg-purple-500 rounded-full"></span>
-                      <span>
-                        <span className="font-semibold text-gray-200">
-                          {bullet.label}:{" "}
+                  {/* Role, Company Name, Date, Location */}
+                  <div className="flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                        {experience.role}
+                      </h3>
+                      <h4 className="text-gray-300 text-md sm:text-sm">
+                        {experience.company}
+                      </h4>
+                      {experience.location && (
+                        <p className="text-xs text-purple-400 mt-0.5">
+                          📍 {experience.location}
+                        </p>
+                      )}
+                    </div>
+                    <p className="mt-2 text-sm text-gray-500">
+                      {experience.date}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Summary description */}
+                <p className="mt-4 text-gray-400">{experience.desc}</p>
+
+                {/* Bullet points */}
+                {experience.bullets && experience.bullets.length > 0 && (
+                  <ul className="mt-4 space-y-2">
+                    {experience.bullets.map((bullet, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm text-gray-400">
+                        <span className="flex-shrink-0 w-2 h-2 mt-1 bg-purple-500 rounded-full"></span>
+                        <span>
+                          <span className="font-semibold text-gray-200">
+                            {bullet.label}:{" "}
+                          </span>
+                          {bullet.detail}
                         </span>
-                        {bullet.detail}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
-              {/* Skills */}
-              <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
-                <ul className="flex flex-wrap mt-2">
-                  {experience.skills.map((skill, i) => (
-                    <li
-                      key={i}
-                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400">
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+                {/* Skills */}
+                <div className="mt-4">
+                  <h5 className="font-medium text-white">Skills:</h5>
+                  <ul className="flex flex-wrap mt-2">
+                    {experience.skills.map((skill, i) => (
+                      <li
+                        key={i}
+                        className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400">
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

@@ -288,5 +288,4 @@ export const projects = [{
     github: "https://github.com/gj701763/LandingPage",
     webapp: "https://sage-duckanoo-3b6240.netlify.app/",
   },
-
 ];
