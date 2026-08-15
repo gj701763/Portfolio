@@ -8,7 +8,7 @@ const experiences = [
     role: "Java FullStack Developer",
     company: "TechAim",
     date: "Jul 2026 – Present • 2 mos",
-    location: "Pune City, Maharashtra, India • Remote",
+    location: "Pune, Maharashtra • Remote",
     img: techAimLogo,
     desc: "Joining TECHAIM as a Java FullStack Developer to design, develop, and maintain high-performance end-to-end web applications.",
     skills: [
@@ -64,7 +64,7 @@ const experiences = [
     role: "Full Stack Developer (React & Java)",
     company: "Gavkari Agro Producer Company Limited",
     date: "Mar 2024 – June 2026",
-    location: "Pune, Maharashtra",
+    location: "Pune, Maharashtra • Remote",
     img: gavkariLogo,
     desc: "Building and maintaining end-to-end web features using React on the frontend and Java Spring Boot on the backend. Delivered admin dashboards, microservices, and CI/CD pipelines that gave operations teams direct control and significantly improved system reliability.",
     skills: [
