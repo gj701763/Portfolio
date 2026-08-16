@@ -95,9 +95,9 @@ export const SkillsInfo = [{
         name: 'Springboot',
         logo: springbootLogo
       },
-      // {name: 'Node JS',logo: nodejsLogo },
-      // {name: 'Express JS', logo: expressjsLogo
-      //},
+      {name: 'Node JS',logo: nodejsLogo },
+      {name: 'Express JS', logo: expressjsLogo
+      },
       {
         name: 'MySQL',
         logo: mysqlLogo
@@ -106,7 +106,7 @@ export const SkillsInfo = [{
         name: 'Hibernate',
         logo: hibernateLogo
       },
-      // {name: 'MongoDB',logo: mongodbLogo},
+      {name: 'MongoDB',logo: mongodbLogo},
       {
         name: "JDBC",
         logo: javaLogo
