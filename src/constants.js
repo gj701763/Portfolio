@@ -279,13 +279,5 @@ export const projects = [{
     tags: ["React JS","Spring Boot", "MySQL", "Hibernate", "Docker","Kubernetes","Azure DevOps","CI/CD"],
     webapp: "https://gavkariagroproducer.com/",
   },
-  {
-    id: 2,
-    title: "LandingPage WebSite",
-    description: "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it landing page web app",
-    image: movierecLogo,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/gj701763/LandingPage",
-    webapp: "https://sage-duckanoo-3b6240.netlify.app/",
-  },
+  
 ];
